@@ -77,7 +77,7 @@ def lock_door() // auto-lock specific
 	if (contact0.latestValue("contact") == "closed")
 	{
 		lock0.lock()
-        runIn(5000, "check_door_actually_locked")
+        runIn(1, "check_door_actually_locked")
 	}
 }
 
